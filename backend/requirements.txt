@@ -1,38 +1,19 @@
-# ---------------------------
-# BASIC SERVER
-# ---------------------------
+# Web server
 flask==3.0.2
 flask-cors==4.0.0
 
-# ---------------------------
-# MACHINE LEARNING DEPENDENCIES
-# ---------------------------
-
-# OpenCV (stable for Linux/Render)
-opencv-python==4.8.1.78
-
-# Numpy compatible with TF + DeepFace
+# Core ML + Computer Vision
+opencv-python-headless==4.8.1.78
 numpy==1.23.5
+
+# Deep Learning
+tensorflow-cpu==2.10.0
+deepface==0.0.93
+mtcnn==0.1.1
 
 # YOLOv8
 ultralytics==8.0.220
 
-# DeepFace (must be <=0.0.93 for TF 2.10 compatibility)
-deepface==0.0.93
-
-# TensorFlow CPU ONLY (last version supporting Python 3.10 on Linux)
-tensorflow-cpu==2.10.0
-
-# Pillow image processing
+# Utils
 Pillow==10.2.0
-
-# ---------------------------
-# API Framework (optional)
-# ---------------------------
-fastapi==0.110.0
-uvicorn==0.29.0
-
-# ---------------------------
-# DATABASE HELPERS
-# ---------------------------
-sqlite3-binary==0.0.1
+tf-keras==2.10.0
