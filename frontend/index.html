@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presence Monitoring – Live</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.png" class="logo" alt="Logo">
+        <h1>AI Presence Monitoring System</h1>
+    </header>
+
+    <main>
+
+        <div id="video-container">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="overlay"></canvas>
+            <img id="face-frame" src="assets/face_frame.png">
+        </div>
+
+        <div id="status-panel">
+            <h2>Status</h2>
+            <p id="system-status">⏳ System Starting...</p>
+
+            <h3>Detected User</h3>
+            <p id="detected-user">None</p>
+
+            <h3>Liveness</h3>
+            <p id="liveness-status">Checking...</p>
+
+            <h3>Warnings</h3>
+            <ul id="alert-list"></ul>
+        </div>
+
+    </main>
+
+    <!-- Alarm -->
+    <audio id="alarm-sound" src="assets/alarm.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
