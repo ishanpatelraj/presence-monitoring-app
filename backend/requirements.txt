@@ -1,10 +1,38 @@
-flask
-flask-cors
-opencv-python
-numpy
-ultralytics
-deepface
-tensorflow==2.15.0
-tf-keras
-Pillow
-sqlite3-binary
+# ---------------------------
+# BASIC SERVER
+# ---------------------------
+flask==3.0.2
+flask-cors==4.0.0
+
+# ---------------------------
+# MACHINE LEARNING DEPENDENCIES
+# ---------------------------
+
+# OpenCV (stable for Linux/Render)
+opencv-python==4.8.1.78
+
+# Numpy compatible with TF + DeepFace
+numpy==1.23.5
+
+# YOLOv8
+ultralytics==8.0.220
+
+# DeepFace (must be <=0.0.93 for TF 2.10 compatibility)
+deepface==0.0.93
+
+# TensorFlow CPU ONLY (last version supporting Python 3.10 on Linux)
+tensorflow-cpu==2.10.0
+
+# Pillow image processing
+Pillow==10.2.0
+
+# ---------------------------
+# API Framework (optional)
+# ---------------------------
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# ---------------------------
+# DATABASE HELPERS
+# ---------------------------
+sqlite3-binary==0.0.1
