@@ -1,0 +1,10 @@
+flask
+flask-cors
+opencv-python
+numpy
+ultralytics
+deepface
+tensorflow==2.15.0
+tf-keras
+Pillow
+sqlite3-binary
