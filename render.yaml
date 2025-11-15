@@ -1,15 +1,11 @@
 services:
   - type: web
-    name: presence-monitoring-backend
+    name: presence-monitoring-app
     env: python
-    plan: free
-    region: oregon
-    rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
-
-staticSites:
-  - name: presence-monitor-frontend
-    rootDir: frontend
-    buildCommand: ""
-    staticPublishPath: "."
+    rootDir: .
+    buildCommand: |
+      pip install --upgrade pip setuptools wheel
+      pip install -r requirements.txt
+    startCommand: "python backend/server.py"
+    envVars:
+      PYTHON_VERSION: 3.10
